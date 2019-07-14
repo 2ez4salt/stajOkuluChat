@@ -1,14 +1,19 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="transparent-header">
+  <img class="logo" src="assets/imgs/stajokulu.png" />
+  <div padding>
+    <ion-item>
+      <ion-input [(ngModel)]="username"  type="text" placeholder="Kullanıcı Adı"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Şifre"></ion-input>
+    </ion-item>
+    <button ion-button block outline (click)="login(username)" color="light" class="login-button">Giriş Yap</button>
+  </div>
 </ion-content>
+<ion-footer>
+  <ion-toolbar class="footer">
+    <div (click)="goToSignup()">
+      <span>Hesabın Yok Mu? <strong>Burdan Kayıt Ol</strong>.</span>
+    </div>
+  </ion-toolbar>
+</ion-footer>

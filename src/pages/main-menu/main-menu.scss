@@ -1,0 +1,107 @@
+page-main-menu {
+  .toolbar-background {
+    background: linear-gradient(316deg, #1ddde8, #BAD5E8);
+    background-size: 1800% 1800%;
+    animation: rainbow 5s linear infinite;
+  }
+  ion-content .scroll-content {
+    background: linear-gradient(316deg, #1ddde8, #BAD5E8);
+    background-size: 1800% 1800%;
+    animation: rainbow 5s linear infinite;
+  }
+  ion-footer {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.11);
+
+    height: 255px; }
+
+  .line-breaker {
+    white-space: pre-line; }
+
+  .input-wrap {
+    background: linear-gradient(316deg,#1ddde8, #BAD5E8);
+    background-size: 1800% 1800%;
+    animation: rainbow 5s linear infinite;
+    padding: 5px;
+    display: flex; }
+  .input-wrap textarea {
+    background: linear-gradient(316deg, #1ddde8, #BAD5E8);
+    background-size: 1800% 1800%;
+    animation: rainbow 5s linear infinite;
+    flex: 1;
+    border: 0;
+    border-bottom: 1px #387ef5;
+    border-style: solid; }
+
+  .message-wrap {
+    padding: 0 10px; }
+  .message-wrap .message {
+    position: relative;
+    padding: 7px 0; }
+  .message-wrap .message .user-img {
+    position: absolute;
+    border-radius: 45px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.36); }
+  .message-wrap .message .msg-detail {
+    width: 100%;
+    display: inline-block; }
+  .message-wrap .message .msg-detail p {
+    margin: 0; }
+  .message-wrap .message .msg-detail .msg-info p {
+    font-size: .8em;
+    color: #888; }
+  .message-wrap .message .msg-detail .msg-content {
+    position: relative;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    color: #fff;
+    width: auto;
+    max-width: 80%; }
+  .message-wrap .message .msg-detail .msg-content span.triangle {
+    background-color: #fff;
+    border-radius: 2px;
+    height: 8px;
+    width: 8px;
+    top: 12px;
+    display: block;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute; }
+  .message-wrap .message.left .msg-content {
+    background-color: #fff;
+    float: left; }
+  .message-wrap .message.left .msg-detail {
+    padding-left: 60px; }
+  .message-wrap .message.left .user-img {
+    left: 0; }
+  .message-wrap .message.left .msg-detail .msg-content {
+    color: #343434; }
+  .message-wrap .message.left .msg-detail .msg-content span.triangle {
+    border-top-width: 0;
+    border-right-width: 0;
+    left: -5px; }
+  .message-wrap .message.right .msg-detail {
+    padding-right: 60px; }
+  .message-wrap .message.right .msg-detail .msg-info {
+    text-align: right; }
+  .message-wrap .message.right .user-img {
+    right: 0; }
+  .message-wrap .message.right ion-spinner {
+    position: absolute;
+    right: 10px;
+    top: 50px; }
+  .message-wrap .message.right .msg-detail .msg-content {
+    background-color: #387ef5;
+    float: right; }
+  .message-wrap .message.right .msg-detail .msg-content span.triangle {
+    background-color: #387ef5;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    right: -5px; }
+}
